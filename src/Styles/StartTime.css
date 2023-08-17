@@ -1,0 +1,16 @@
+.start-time-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.start-time-text {
+  font-size: 18px;
+  color: #333;
+}
+
+.start-time-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #28a745;
+}
+  

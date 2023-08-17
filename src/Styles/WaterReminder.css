@@ -1,0 +1,47 @@
+.water-reminder-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.water-reminder-container.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reminder-content {
+  text-align: center;
+}
+
+.reminder-content h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.reminder-content p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.reminder-content button {
+  margin-top: 10px;
+  background-color: navy;
+  border: 1px solid #a85050;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reminder-content button:hover {
+  background-color: #fff;
+  color: #007bff;
+}

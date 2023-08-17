@@ -1,0 +1,20 @@
+.break-time-container {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-right: 10px;
+
+  margin-top: 10px;
+  text-align: right;
+}
+
+.break-time-text {
+  font-size: 18px;
+  color: #333;
+}
+
+.break-time-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  background-color: grey;
+}
