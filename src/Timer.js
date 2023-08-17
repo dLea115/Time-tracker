@@ -80,9 +80,9 @@ function Timer() {
       <div className="timer-value">
         <h2>Elapsed Time:</h2>
         <p>{formatTime(elapsedTime)}</p>
+        <StartTime startTime={startTime} />
       </div>
-      <StartTime startTime={startTime} />
-      <div className="timer-button">
+      <div className="timer-buttons">
         <button onClick={startTimer}>Start</button>
         <button onClick={stopTimer}>Stop</button>
         <button onClick={takeBreak}>Take a Break</button> {/* Break button */}

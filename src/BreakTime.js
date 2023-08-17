@@ -4,10 +4,6 @@ import "./Styles/BreakTime.css";
 import { useState, useEffect } from "react";
 
 function BreakTime({ breakTime }) {
-  if (!Array.isArray(breakTime) || breakTime.length === 0) {
-    return null;
-  }
-
   const breakComponents = breakTime.map((breakInterval, index) => {
     const totalBreakTime = breakInterval.end - breakInterval.start;
 

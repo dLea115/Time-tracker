@@ -1,37 +1,52 @@
 .timer-container {
-  max-width: 1900px;
-  max-height: 100%;
-  width: 1208px;
-  height: 100vh;
+  background-color: black;
   border: 1px solid #ccc;
+  color: white;
   border-radius: 5px;
   text-align: center;
   justify-content: center;
-  display: flex;
   position: relative;
 
 }
+.timer-container h1{
+  text-align: left;
+}
 
 .timer-value {
+  color: white;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
+  text-align: left;
+}
+.timer-value p{
+  justify-content: left;
+  text-align: left;
+
 }
 
 .timer-buttons {
-  margin-top: 20px;
   color: #007bff;
+  cursor: pointer;
+  justify-content: left;
+  text-align: left;
+  margin-left: auto;
+  margin-right: 10px;
+
 }
 
 .timer-buttons button {
-  margin: 0 10px;
+  margin: 0 auto;
   padding: 10px 20px;
+  width: fit-content;
   font-size: 16px;
   background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-align: left;
+  justify-content: left;
 }
 
 .timer-buttons button:hover {
