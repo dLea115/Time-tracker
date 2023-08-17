@@ -67,7 +67,7 @@ function Timer() {
   useEffect(() => {
     const standUpInterval = setInterval(() => {
       setStandUpReminder(true);
-    }, 2 * 60 * 60 * 1000); // 2 hour timer
+    }, 60 * 60 * 1000); // 2 hour timer
 
     return () => {
       clearInterval(standUpInterval);
@@ -85,7 +85,8 @@ function Timer() {
       <div className="timer-buttons">
         <button onClick={startTimer}>Start</button>
         <button onClick={stopTimer}>Stop</button>
-        <button onClick={takeBreak}>Take a Break</button> {/* Break button */}
+        <button onClick={takeBreak}>Break to find Work time</button>{" "}
+        {/* Break button */}
       </div>
       <BreakTime breakTime={breakTime} /> {/* Break Timer and button */}
       <WaterReminder /> {/* Water Reminder */}
