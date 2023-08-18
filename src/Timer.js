@@ -25,6 +25,8 @@ function Timer() {
       setIsRunning(false);
       const now = new Date();
       const elapsedMilliseconds = now - startTime;
+      // setBreakTime([...breakTime, { start: startTime, end: now }]);
+      // setStartTime(null);
       setBreakTime((prevBreakTime) => prevBreakTime + elapsedMilliseconds);
     }
   };
@@ -67,7 +69,7 @@ function Timer() {
   useEffect(() => {
     const standUpInterval = setInterval(() => {
       setStandUpReminder(true);
-    }, 60 * 60 * 1000); // 2 hour timer
+    }, 60 * 60 * 1000); // 1 hour timer
 
     return () => {
       clearInterval(standUpInterval);
@@ -85,9 +87,10 @@ function Timer() {
       <div className="timer-buttons">
         <button onClick={startTimer}>Start</button>
         <button onClick={stopTimer}>Stop</button>
-        <button onClick={takeBreak}>Break to find Work time</button>{" "}
+        <button onClick={takeBreak}>Break to find Work time</button>
         {/* Break button */}
       </div>
+      <p>Break count: {breakTime.length} </p>
       <BreakTime breakTime={breakTime} /> {/* Break Timer and button */}
       <WaterReminder /> {/* Water Reminder */}
       <div>

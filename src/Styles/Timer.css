@@ -11,6 +11,10 @@
 .timer-container h1{
   text-align: left;
 }
+.timer-container p{
+  text-align: right;
+  font-size: 18px;
+}
 
 .timer-value {
   color: white;

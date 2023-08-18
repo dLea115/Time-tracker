@@ -13,14 +13,14 @@ function WaterReminder() {
       if (waterTimer === 0) {
         setShowReminder(true);
         waterInterval = setInterval(() => {});
-        setWaterTimer(30 * 60 * 1000); // 30 dakika
+        setWaterTimer(30 * 60 * 1000); // 30 min
       } else if (waterTimer > 0) {
         setShowReminder(true);
-        setWaterTimer(waterTimer - 1000); // Her saniye bir azalt
+        setWaterTimer(waterTimer - 1000); // Each 1 sec decrease the count
       } else {
         clearInterval(waterInterval);
       }
-    }, 1000); // Her saniye
+    }, 1000); // Each sec
 
     return () => {
       clearInterval(waterInterval);
@@ -32,7 +32,7 @@ function WaterReminder() {
   };
 
   const handleDrink = () => {
-    setWaterTimer(60 * 60 * 1000); // 1 saat
+    setWaterTimer(60 * 60 * 1000); // 1 hour
   };
 
   const formatTime = (milliseconds) => {

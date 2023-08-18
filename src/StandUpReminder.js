@@ -7,11 +7,13 @@ function StandUpReminder({ show, onClose }) {
   }
 
   return (
-    <div className="stand-up-reminder">
-      <div className="reminder-content">
-        <p>Time to stand up for streching the legs !!!</p>
-        <button onClick={onClose}>OK</button>
-      </div>
+    <div className={`stand-up-reminder-container ${show ? "active" : ""}`}>
+      {show && (
+        <div className="reminder-content">
+          <p>Time to stand up for stretching the legs !!!</p>
+          <button onClick={onClose}>OK</button>
+        </div>
+      )}
     </div>
   );
 }

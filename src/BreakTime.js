@@ -13,7 +13,7 @@ function BreakTime({ breakTime }) {
     return (
       <div key={index} className="break-time-container">
         <div className="break-time-text">
-          <p>{`Work ${index + 1} Time:`}</p>
+          <p>{`Work ${index + 1} Time: `}</p>
         </div>
         <div className="break-time-value">
           <p>
