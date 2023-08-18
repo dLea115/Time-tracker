@@ -91,7 +91,7 @@ function Timer() {
         {/* Break button */}
       </div>
       <p>Break count: {breakTime.length} </p>
-      <BreakTime breakTime={breakTime} /> {/* Break Timer and button */}
+      <BreakTime breakTime={breakTime || []} /> {/* Break Timer and button */}
       <WaterReminder /> {/* Water Reminder */}
       <div>
         <StandUpReminder

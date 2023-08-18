@@ -6,7 +6,6 @@ import "./Styles/WaterReminder.css";
 function WaterReminder() {
   const [waterTimer, setWaterTimer] = useState(30 * 60 * 1000);
   const [showReminder, setShowReminder] = useState(false);
-  const waterInterval = null;
 
   useEffect(() => {
     const waterInterval = setInterval(() => {
